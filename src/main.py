@@ -1,6 +1,8 @@
 from fastapi import Depends, FastAPI, Request
 from fastapi.templating import Jinja2Templates
 from fastapi.responses import HTMLResponse
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
 from fastapi_cache import FastAPICache
 from fastapi_cache.backends.redis import RedisBackend
@@ -15,8 +17,12 @@ from auth.manager import get_user_manager
 
 from auth.schemas import UserCreate, UserRead
 from operations.router import router as router_operation
+from pages.router import router as router_pages
 
 app = FastAPI(title='Messeger')
+
+# Подключаем статик файлы
+app.mount("/static", StaticFiles(directory="static"), name="static")
 
 templates = Jinja2Templates(directory='templates')
 
@@ -39,8 +45,22 @@ app.include_router(
 )
 
 app.include_router(router_operation)
+app.include_router(router_pages)
 
 current_user = fastapi_users.current_user()
+
+origins = [
+    "http://localhost:8000"
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
+    allow_headers=["Content-Type", "Set-Cookie", "Access-Control-Allow-Headers", "Access-Control-Allow-Origin",
+                   "Authorization"],
+)
 
 
 @app.on_event("startup")

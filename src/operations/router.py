@@ -15,21 +15,25 @@ router = APIRouter(
 )
 
 
-@router.get('/')
-async def get_specific_operations(operation_type: str, session: AsyncSession = Depends(get_async_session)):
+@router.get("")
+async def get_specific_operations(
+        operation_type: str,
+        session: AsyncSession = Depends(get_async_session),
+):
     try:
         query = select(operation).where(operation.c.type == operation_type)
         result = await session.execute(query)
-        
-        # Преобразуйте результат в список словарей
-        operations = [dict(row._asdict()) for row in result.all()]
-        
-        return operations
+        return {
+            "status": "success",
+            "data": result.all(),
+            "details": None
+        }
     except Exception:
+        # Передать ошибку разработчикам
         raise HTTPException(status_code=500, detail={
-            'status': 'error',
-            'data': None,
-            'details': None
+            "status": "error",
+            "data": None,
+            "details": None
         })
 
 @router.post('/')
