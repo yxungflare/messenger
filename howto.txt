@@ -1,0 +1,17 @@
+venv
+python -m venv myvenv
+myvenv/Scripts/activate
+
+
+alembic
+
+alembic init migrations
+alembic revision --autogenerate -m "..."
+alembic upgrade head
+
+
+celery/flower
+Fixed errors
+celery -A tasks.tasks:celery worker --loglevel=INFO --pool=solo
+celery -A tasks.tasks:celery flower
+
