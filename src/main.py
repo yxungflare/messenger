@@ -1,6 +1,5 @@
-from fastapi import Depends, FastAPI, Request
+from fastapi import FastAPI
 from fastapi.templating import Jinja2Templates
-from fastapi.responses import HTMLResponse
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
@@ -18,6 +17,7 @@ from auth.manager import get_user_manager
 from auth.schemas import UserCreate, UserRead
 from operations.router import router as router_operation
 from pages.router import router as router_pages
+from chat.router import router as router_chat
 
 app = FastAPI(title='Messeger')
 
@@ -46,6 +46,7 @@ app.include_router(
 
 app.include_router(router_operation)
 app.include_router(router_pages)
+app.include_router(router_chat)
 
 current_user = fastapi_users.current_user()
 
