@@ -3,7 +3,9 @@ from typing import Optional
 from fastapi import Depends, Request
 from fastapi_users import BaseUserManager, IntegerIDMixin, exceptions, models, schemas
 
-from database import User, get_user_db
+from auth.models import User
+from auth.utils import get_user_db
+
 from config import MANAGER_SECRET as SECRET
 
 
@@ -58,7 +60,7 @@ class UserManager(IntegerIDMixin, BaseUserManager[User, int]):
         )
         password = user_dict.pop("password")
         user_dict["hashed_password"] = self.password_helper.hash(password)
-        user_dict["role_id"] = 1
+        user_dict["role_id"] = 0
 
         created_user = await self.user_db.create(user_dict)
 

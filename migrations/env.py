@@ -5,17 +5,11 @@ from sqlalchemy import pool
 
 from alembic import context
 
-# Изменил
-import os
-import sys
-
-sys.path.append(os.path.join(sys.path[0], 'src'))
-# 
 from src.config import DB_HOST, DB_NAME, DB_PASS, DB_PORT, DB_USER
 # Изменил 
-from src.auth.models import metadata as metadata_auth
-from src.operations.models import metadata as metadata_operations
-# this is the Alembic Config object, which provides
+from src.database import Base
+from src.auth.models import *
+
 # access to the values within the .ini file in use.
 config = context.config
 
@@ -25,7 +19,7 @@ config.set_section_option(section, 'DB_NAME', DB_NAME)
 config.set_section_option(section, 'DB_PASS', DB_PASS)
 config.set_section_option(section, 'DB_PORT', DB_PORT)
 config.set_section_option(section, 'DB_USER', DB_USER)
-
+# this is the Alembic Config object, which provides
 # Interpret the config file for Python logging.
 # This line sets up loggers basically.
 if config.config_file_name is not None:
@@ -35,9 +29,7 @@ if config.config_file_name is not None:
 # for 'autogenerate' support
 # from myapp import mymodel
 # target_metadata = mymodel.Base.metadata
-
-# Изменил
-target_metadata = [metadata_auth, metadata_operations]
+target_metadata = [Base.metadata]
 
 # other values from the config, defined by the needs of env.py,
 # can be acquired:
@@ -91,7 +83,7 @@ def run_migrations_online() -> None:
             context.run_migrations()
 
 
-    if context.is_offline_mode():
-        run_migrations_offline()
-    else:
-        run_migrations_online()
+if context.is_offline_mode():
+    run_migrations_offline()
+else:
+    run_migrations_online()
