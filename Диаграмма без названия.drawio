@@ -1,9 +1,187 @@
-<mxfile host="app.diagrams.net" modified="2024-03-08T11:20:45.998Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" version="24.0.2" etag="uWblfrSLINbZLlHqcrFI" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-21T11:01:44.593Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="yfmwIqyWSpCPONOu_RNe" version="24.0.5" type="github">
   <diagram name="Страница — 1" id="_Rz4LjrNZq2HX1HezCoS">
-    <mxGraphModel>
+    <mxGraphModel dx="875" dy="464" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="NR_57TEtAcnd4kkGrlz3-1" target="NR_57TEtAcnd4kkGrlz3-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="NR_57TEtAcnd4kkGrlz3-1" target="NR_57TEtAcnd4kkGrlz3-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="NR_57TEtAcnd4kkGrlz3-1" target="NR_57TEtAcnd4kkGrlz3-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="NR_57TEtAcnd4kkGrlz3-1" target="NR_57TEtAcnd4kkGrlz3-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-1" value="Оператор" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="210" width="70" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" edge="1" parent="1" source="NR_57TEtAcnd4kkGrlz3-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="900" y="490" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="525" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-6" value="Получение отчета по системе работоспособности уже существующих датчиков" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="550" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="NR_57TEtAcnd4kkGrlz3-7" target="NR_57TEtAcnd4kkGrlz3-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="970" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-7" value="Получение отчета по количеству автомобилей с транспондером и без" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="940" y="670" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-8" value="Получение отчета по загруженности дороги" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="470" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="NR_57TEtAcnd4kkGrlz3-9" target="NR_57TEtAcnd4kkGrlz3-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-9" value="Получение отчета по типам и количеству автомобилей" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="670" y="670" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="NR_57TEtAcnd4kkGrlz3-10" target="NR_57TEtAcnd4kkGrlz3-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-10" value="Камеры" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="230" y="760" width="70" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-11" value="Контроль потока (направление автомобилей в соответствии с их классом)" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="10" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="NR_57TEtAcnd4kkGrlz3-12" target="NR_57TEtAcnd4kkGrlz3-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-12" value="Сохранение фото- и видеоматериала" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="610" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="NR_57TEtAcnd4kkGrlz3-13" target="NR_57TEtAcnd4kkGrlz3-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-13" value="Контроль зон аварийной остановки" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="50" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.471;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1415.25" y="930" as="sourcePoint" />
+            <mxPoint x="1414.7399999999998" y="970" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1415.25" y="970" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="NR_57TEtAcnd4kkGrlz3-8" target="NR_57TEtAcnd4kkGrlz3-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1400" y="420" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="1235" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="NR_57TEtAcnd4kkGrlz3-15" target="NR_57TEtAcnd4kkGrlz3-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-44" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="NR_57TEtAcnd4kkGrlz3-15" target="NR_57TEtAcnd4kkGrlz3-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-15" value="Программный модуль" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1380" y="790" width="70" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-19" value="Пункт пропуска" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1380" y="1210" width="70" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-21" value="Трансляция фото- и видеоматериалов" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="570" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-23" value="Запрос получения фото- и видеоматериалов" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="215" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NR_57TEtAcnd4kkGrlz3-23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1460" y="830" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1560" y="265" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NR_57TEtAcnd4kkGrlz3-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2100" y="990" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2100" y="1020" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-26" value="Анализ содержания запроса" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="970" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="NR_57TEtAcnd4kkGrlz3-26" target="NR_57TEtAcnd4kkGrlz3-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="NR_57TEtAcnd4kkGrlz3-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1320.0000124917826" y="1050.025641025641" as="sourcePoint" />
+            <mxPoint x="270" y="900" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="270" y="1020" />
+              <mxPoint x="270" y="900" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-34" value="Ответ на запрос" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="810" y="350" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NR_57TEtAcnd4kkGrlz3-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="455" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-41" value="Отправка запросов в аварийные службы" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="50" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="NR_57TEtAcnd4kkGrlz3-43" target="NR_57TEtAcnd4kkGrlz3-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="NR_57TEtAcnd4kkGrlz3-43" target="NR_57TEtAcnd4kkGrlz3-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-43" value="Определение классов и количества автомобилей" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1070" y="795" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-51" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1320" y="840" as="sourcePoint" />
+            <mxPoint x="515" y="650" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1320" y="920" />
+              <mxPoint x="515" y="920" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="NR_57TEtAcnd4kkGrlz3-54" target="NR_57TEtAcnd4kkGrlz3-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-54" value="Система контроля &lt;br&gt;работоспособности оборудования" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="2067" y="840" width="70" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NR_57TEtAcnd4kkGrlz3-56">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1460" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-56" value="Передача данных о работоспособности оборудования" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1730" y="845" width="190" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="NR_57TEtAcnd4kkGrlz3-59" value="Контроль работоспособности существующего оборудования" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="215" width="190" height="100" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
